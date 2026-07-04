@@ -1,4 +1,4 @@
-# Canva → WhatsApp Bulk Tool (multi-client)
+# Canva → WhatsApp Bulk Tool
 
 Sends images (from a local folder **or** sheet links) into a fixed Canva
 template, then delivers each finished card to a WhatsApp number via Gupshup.
@@ -30,7 +30,7 @@ requires the Enterprise plan. Everything before and after it is automatic.
 pip install -r requirements.txt
 ```
 
-## Step 1 — set up a client (one time per client)
+## Step 1 — set up
 
 ```
 python config_manager.py
@@ -84,8 +84,8 @@ pip install playwright
 python -m playwright install chromium
 ```
 
-**One-time login per client** (opens a visible browser, you log into that
-client's Canva, session is saved):
+**One-time login per person** (opens a visible browser, you log into the
+Canva, session is saved):
 ```
 python stage1_5_canva.py --login
 ```
